@@ -1,0 +1,135 @@
+/* 
+============
+Google Font
+============
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+  --clr-background-1: #23252c;
+  --clr-background-2: #1a1b21;
+  --clr-white: #ffffff;
+  --clr-font2: #f3bf99;
+  --clr-font3: #dcdcdc;
+  --clr-btn: #d1d5db;
+  --clr-icon: #918e9b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--clr-background-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 317px;
+  height: calc(100vh - 4rem);
+  background: var(--clr-background-2);
+  color: var(--clr-white);
+  margin-block: 2rem;
+  border-radius: 10px;
+}
+
+/* Info */
+
+.info--container {
+  display: grid;
+  place-items: center;
+  line-height: 1.5rem;
+}
+
+.info--photo {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.info--name {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.info--job {
+  text-transform: capitalize;
+  color: var(--clr-font2);
+  font-size: 13px;
+}
+
+.info--webname {
+  font-size: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.info--btn {
+  background: var(--clr-white);
+  text-transform: capitalize;
+  width: 80%;
+  padding: 0.5rem;
+  border: transparent;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn-icon {
+  margin-right: 5px;
+}
+
+/* content for About & Interests */
+.content {
+  /* border: 2px solid red; */
+  max-width: 247px;
+  margin: auto;
+}
+/* About */
+.middle-title {
+  padding-top: 1rem;
+  font-size: 20px;
+}
+.desc {
+  font-size: 15px;
+  color: var(--clr-font3);
+}
+/* Interests */
+
+/* Footer */
+.footer--sns {
+  max-width: 247px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.icon {
+  color: var(--clr-icon);
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 550px) {
+  /* 화면이 큰 화면에서 550px으로 줄어들때까지 적용된다. */
+  body {
+    background-color: lightblue;
+  }
+}
